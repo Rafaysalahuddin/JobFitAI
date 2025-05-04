@@ -1,54 +1,49 @@
-# React + TypeScript + Vite
+# 💼 JobFit AI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**JobFit AI** is a resume tailoring tool powered by Generative AI that rewrites your resume using the STAR method based on a job description — helping you stand out and evaluate how well you match the role.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 📝 **STAR-Formatted Resume Bullet Points**  
+  Rewrites each bullet in Situation–Task–Action–Result style while preserving your original structure.
 
-## Expanding the ESLint configuration
+- 🧠 **AI-Powered Resume Optimization**  
+  Highlights strong fits, suggests improvements, and leaves `[FILL IN: ...]` prompts for missing metrics or outcomes.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- ⭐️ **Job Fit Score & Salary Satisfaction Rating**  
+  Visualized as 5-star ratings with an explanation for each.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- 📎 **Export to PDF**  
+  Download your AI-tailored resume with one click.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- 🧾 **Work Preference Matching**  
+  Flags whether your remote/hybrid/on-site preference aligns with the job.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+## ✨ Demo
+
+![JobFit AI Screenshot](./public/JobFitLogo.png)
+
+> Paste your resume + job description, adjust your settings, and get tailored results in seconds.
+
+---
+
+## 📦 Tech Stack
+
+- React + TypeScript
+- Vite
+- OpenAI GPT-4 API
+- HTML2PDF.js
+- CSS
+
+---
+
+## 🛠 Setup
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/Rafaysalahuddin/JobFitAI.git
+cd JobFitAI
 ```
