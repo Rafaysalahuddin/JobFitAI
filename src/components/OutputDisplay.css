@@ -1,0 +1,56 @@
+.output-display {
+  margin-top: 2rem;
+  border-left: 4px solid #0077cc;
+  background-color: #f9f9f9;
+  padding: 1rem 1.5rem;
+  border-radius: 6px;
+  font-family: Arial, sans-serif;
+  white-space: pre-wrap;
+}
+
+.output-display strong {
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.output-display .fill-in {
+  background-color: #fff6cc;
+  padding: 0.1rem 0.3rem;
+  border-radius: 4px;
+  font-style: italic;
+  color: #a15c00;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0.5rem;
+}
+
+.toolbar button {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.toolbar button:hover {
+  background-color: #005fa3;
+}
+
+.stars {
+  font-size: 1.25rem;
+  color: #f5c518;
+  margin-left: 8px;
+}
+
+.score-row {
+  margin-bottom: 0.5rem;
+}
+
+.toolbar button + button {
+  margin-left: 8px;
+}
