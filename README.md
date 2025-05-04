@@ -21,14 +21,6 @@
 
 ---
 
-## ✨ Demo
-
-![JobFit AI Screenshot](./public/JobFitLogo.png)
-
-> Paste your resume + job description, adjust your settings, and get tailored results in seconds.
-
----
-
 ## 📦 Tech Stack
 
 - React + TypeScript
